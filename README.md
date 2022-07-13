@@ -5,65 +5,45 @@
 - Best Performance Optimization
 - Component có tính tái sử dụng.
 
-### `npm start`
+## 2. Class components vs Function components. Redux vs Context API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Setup env
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 4. Hello world
 
-### `npm test`
+## 5. Cấu trúc của project reactjs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 6. React Component
 
-### `npm run build`
+- Là một hàm trả ra một khối HTML(…)
+- Có 2 component: + class Component / function component (function/arrow)
+- Sử dụng cú pháp JSX => return về một block (khối)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 7. State
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Là trạng một trạng thái. Dùng kiểm soát trạng thái.
+- Cập nhật dữ liệu trạng thái render lại trang.
+- this: sử dụng để gọi đến chính class
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 8. DOM Events (Document object model)
 
-### `npm run eject`
+- Xử lý sự kiện DOM
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 9. setState và Re-render
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- khi state thay đổi thì reactjs re-render lại
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 10. Intro form input
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 11. Nesting component :(Lồng)
 
-## Learn More
+## 12. Props
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Props (bản chất là 1 biến)
+- Truyền data trong react (chỉ truyền được data từ trên xuống dưới)
+  ## 13. Outputting List – Render nhiều data với Props
+  ## 14. Stateless/StateFull Component
+- (Function component / class Component)
+  ## 15. Conditional Output – Sử dụng Điều Kiện với ReactJS
+  ## 16. Split Componet
+- Chia nhỏ component
