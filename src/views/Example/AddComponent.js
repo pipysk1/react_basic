@@ -1,26 +1,35 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 export default class AddComponent extends Component {
   state = {
     nameCourse: "",
     price: "",
-  };
+  }
   handleChangeFname = (event) => {
     this.setState({
       nameCourse: event.target.value,
-    });
-  };
+    })
+  }
 
   handleChangeLname = (event) => {
     this.setState({
       price: event.target.value,
-    });
-  };
+    })
+  }
 
   handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Click me");
-  };
+    let { nameCourse, price } = this.state
+    e.preventDefault()
+    !nameCourse || !price
+      ? alert("Please input data name and price")
+      : this.props.addNewCourse({
+        id: Math.floor(Math.random() * 100),
+        name: this.state.nameCourse,
+        price: this.state.price,
+      })
+    nameCourse = ""
+    price = ""
+  }
   render() {
     return (
       <form>
@@ -49,6 +58,6 @@ export default class AddComponent extends Component {
           onClick={(e) => this.handleSubmit(e)}
         />
       </form>
-    );
+    )
   }
 }

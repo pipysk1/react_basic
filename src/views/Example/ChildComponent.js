@@ -1,17 +1,24 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 export default class ChildComponent extends Component {
   state = {
     showList: false,
-  };
+  }
+
   handleShowHide = () => {
     this.setState({
       showList: !this.state.showList,
-    });
-  };
+    })
+  }
+
+  handleDelete = (course) => {
+    this.props.deleteCourse(course)
+  }
+
   render() {
-    let { courses } = this.props;
-    let { showList } = this.state;
+
+    let { courses } = this.props
+    let { showList } = this.state
 
     return (
       <>
@@ -22,11 +29,16 @@ export default class ChildComponent extends Component {
         ) : (
           <>
             {courses.map((course) => (
-              <ul key={course.id}>
-                <li>
-                  {course.name} - {course.price}
-                </li>
-              </ul>
+              <div key={course.id}>
+                {course.name} - {course.price} ${" "}
+                <span
+                  onClick={() => this.handleDelete(course)}
+                  style={{ cursor: "pointer", color: "red" }}
+                >
+                  {" "}
+                  &times{" "}
+                </span>
+              </div>
             ))}
             <div>
               <button onClick={() => this.handleShowHide()}>Hide</button>
@@ -34,6 +46,6 @@ export default class ChildComponent extends Component {
           </>
         )}
       </>
-    );
+    )
   }
 }

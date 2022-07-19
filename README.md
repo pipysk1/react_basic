@@ -41,9 +41,22 @@
 
 - Props (bản chất là 1 biến)
 - Truyền data trong react (chỉ truyền được data từ trên xuống dưới)
-  ## 13. Outputting List – Render nhiều data với Props
-  ## 14. Stateless/StateFull Component
+
+## 13. Outputting List – Render nhiều data với Props
+
+## 14. Stateless/StateFull Component
+
 - (Function component / class Component)
-  ## 15. Conditional Output – Sử dụng Điều Kiện với ReactJS
-  ## 16. Split Componet
+
+## 15. Conditional Output – Sử dụng Điều Kiện với ReactJS
+
+## 16. Split Componet
+
 - Chia nhỏ component
+
+## 17. Truyền Function từ Cha sang Con
+
+## 20.React Lifecycle Methods (vòng đời ReactJS)
+
+    -- Mounting
+        + constructor ->
